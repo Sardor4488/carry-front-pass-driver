@@ -1,11 +1,12 @@
 import Image from "next/image";
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
 import { Card, Text, Badge, Button, Group, Center } from "@mantine/core";
 import useSWR from "swr";
 import { getUsers } from "@/services";
 import type { User } from "@/types/user";
+import DriverMap from "./driverMap/driverMap";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const { data, error } = useSWR("users", getUsers);
@@ -35,7 +36,7 @@ export default function Home() {
           </Badge>
         </Group>
 
-        <Text size="sm" color="dimmed" className={inter.className}>
+        <Text size="sm" color="dimmed" className={"inter.className"}>
           With Fjord Tours you can explore more of the magical fjord landscapes
           with tours and activities on and around the fjords of Norway
         </Text>
@@ -51,6 +52,7 @@ export default function Home() {
           </Card>
         ))}
       </Group>
+      <DriverMap/>
     </div>
   );
 }
