@@ -8,7 +8,7 @@ const DriverMap = () => {
       apikey: 'YOUR_API_KEY_HERE',
     }}
   >
-    <Map  defaultState={{ center: [55.75, 37.57], zoom: 20 }} />
+    <Map className='w-100 h-100vh'  defaultState={{ center: [55.75, 37.57], zoom: 20 }} />
   </YMaps>  )
 }
 

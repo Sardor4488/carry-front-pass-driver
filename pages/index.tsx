@@ -17,8 +17,8 @@ export default function Home() {
   console.log(data, error);
 
   return (
-    <div className="flex justify-center flex-col items-center w-full h-screen p-8">
-      <Card shadow="sm" padding="lg" radius="md" withBorder w="350px" m="auto">
+    <div className="  ">
+      {/* <Card shadow="sm" padding="lg" radius="md" withBorder w="350px" m="auto">
         <Card.Section>
           <Image
             src="https://images.unsplash.com/photo-1527004013197-933c4bb611b3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=720&q=80"
@@ -51,7 +51,7 @@ export default function Home() {
             {user.name}
           </Card>
         ))}
-      </Group>
+      </Group> */}
       <DriverMap/>
     </div>
   );

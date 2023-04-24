@@ -25,3 +25,9 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+.w-100{
+  width: 100% !important;
+}
+.h-100vh{
+  height: 100vh;
+}
